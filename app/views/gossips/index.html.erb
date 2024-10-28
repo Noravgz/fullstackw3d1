@@ -1,0 +1,6 @@
+<h1>Bienvenue sur The Gossip Project </h1>
+<h1>Liste des Potins</h1>
+<% @gossips.each do |gossip| %>
+  <h2><%= link_to gossip.title, gossip_path(gossip) %></h2>
+  <p><%= gossip.content %></p>
+<% end %>
